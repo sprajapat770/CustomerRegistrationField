@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="customer_form_register">
+            <block class="Magento\Framework\View\Element\Template" name="form_additional_info_customer"
+                   template="Magento360_CustomerRegistrationField::additional.phtml"/>
+        </referenceContainer>
+        <referenceBlock name="customer_form_register">
+            <arguments>
+                <argument name="show_address_fields" xsi:type="boolean">true</argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>

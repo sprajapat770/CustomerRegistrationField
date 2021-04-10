@@ -1,0 +1,14 @@
+<?php
+$customFieldLabel = __("Company Name");
+$customField = "custom_company_field";
+?>
+<div class="field <?= $customField ?> required">
+    <label class="label" for="<?= $customField ?>">
+        <span><?= $block->escapeHtml($customFieldLabel) ?></span>
+    </label>
+    <div class="control">
+        <input type="text" name="<?= $customField ?>" id="<?= $customField ?>" value=""
+               title="<?= $block->escapeHtmlAttr($customFieldLabel) ?>"
+               class="input-text" data-validate="{required:false}">
+    </div>
+</div>
